@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./images/pokeball.png" type="image/x-icon">
+    <script
+      src="https://kit.fontawesome.com/e333ca43bf.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="feilds">
+        <input
+          type="text"
+          onkeyup="search()"
+          placeholder="Search a Pokemon"
+          id="searchPoke"
+        />
+        <div class="dropdown">
+          <button class="dropbtn">Sort</button>
+          
+          <div class="dropdown-content">
+            <a href="#" onclick="sortAsc()">Name <img src="./images/asc.png"></a>
+            <a href="#" onclick="sortDec()">Name <img src="./images/dec.png"></a>
+            <a href="#" onclick="sortAscId()">ID <img src="./images/id asce.png"></a>
+            <a href="#" onclick="sortDecId()">ID <img src="./images/id dec.png"></a>
+          </div>
+        </div>
+      </div>
+
+      <table id="table">
+        <thead id="thead">
+          
+            <th>ID</th>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Url</th>
+            <th></th>
+
+          
+        </thead>
+
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
